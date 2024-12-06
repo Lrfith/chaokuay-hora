@@ -183,3 +183,141 @@ footer {
 }
 
 
+/* Responsive Styles */
+
+/* หน้าจอเล็ก (มือถือแนวตั้ง) */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column; /* จัด header เป็นแนวตั้ง */
+        text-align: center;
+    }
+
+    header .logo img {
+        width: 30px; /* ลดขนาดโลโก้ */
+    }
+
+    header nav ul {
+        flex-direction: column; /* จัดเมนูเป็นแนวตั้ง */
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    .profile {
+        flex-direction: column; /* จัด layout เป็นแนวตั้ง */
+        padding: 1em;
+    }
+
+    .profile-index {
+        padding: 2em 1em;
+    }
+
+    .profile-index img {
+        width: 100%; /* ปรับรูปภาพให้เต็มหน้าจอ */
+    }
+
+    .profile-index2 {
+        flex-direction: column; /* จัด layout เป็นแนวตั้ง */
+        width: 100%;
+        height: auto;
+    }
+
+    .profile-index3 h1 {
+        font-size: 48px; /* ลดขนาดตัวอักษร */
+    }
+
+    .profile-index3 h2 {
+        font-size: 32px;
+    }
+
+    .about-center {
+        width: 100%; /* ปรับให้ใช้พื้นที่เต็ม */
+        padding: 10px;
+    }
+
+    .profile-container {
+        flex-direction: column; /* จัด layout เป็นแนวตั้ง */
+        width: 100%;
+    }
+
+    .profile-container img {
+        width: 100%;
+    }
+
+    .profile-info {
+        padding: 10px;
+    }
+}
+
+/* หน้าจอขนาดกลาง (แท็บเล็ต) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.1em; /* ลดขนาดตัวอักษร */
+    }
+
+    header .logo img {
+        width: 35px;
+    }
+
+    .profile {
+        flex-direction: column;
+        padding: 1.5em;
+    }
+
+    .profile-index2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .profile-index3 h1 {
+        font-size: 60px;
+    }
+
+    .profile-index3 h2 {
+        font-size: 42px;
+    }
+
+    .profile-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .about-center {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* หน้าจอขนาดใหญ่ (เดสก์ท็อป) */
+@media (min-width: 1200px) {
+    header h1 {
+        font-size: 1.5em; /* ขยายขนาดตัวอักษร */
+    }
+
+    header nav ul li a {
+        font-size: 1.1em; /* ขยายขนาดเมนู */
+    }
+
+    .profile-index2 {
+        width: 80%;
+    }
+
+    .profile-index3 h1 {
+        font-size: 72px;
+    }
+
+    .profile-index3 h2 {
+        font-size: 52px;
+    }
+
+    .profile-container {
+        width: 70%;
+        margin: 0 auto; /* จัดกึ่งกลาง */
+    }
+
+    .about-center {
+        width: 80%;
+    }
+}
