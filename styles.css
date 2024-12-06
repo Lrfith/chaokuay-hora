@@ -237,3 +237,82 @@ footer {
   color: #999;
   text-align: center;
 }
+
+
+/* Responsive Styles */
+
+/* ขนาดหน้าจอเล็ก (มือถือแนวตั้ง) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px; /* ลดขนาดตัวอักษร */
+  }
+
+  .container {
+    padding: 0 10px; /* ลด padding ด้านข้าง */
+  }
+
+  .logo h1 {
+    font-size: 1.8em; /* ลดขนาดโลโก้ */
+  }
+
+  nav a {
+    font-size: 1em; /* ลดขนาดเมนู */
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* เปลี่ยนเป็น 1 คอลัมน์ */
+  }
+
+  iframe {
+    width: 100%; /* ให้ iframe กว้างเต็มหน้าจอ */
+    height: 200px; /* ลดความสูง */
+  }
+}
+
+/* ขนาดหน้าจอขนาดกลาง (แท็บเล็ต) */
+@media (max-width: 768px) {
+  .logo h1 {
+    font-size: 2.2em;
+  }
+
+  nav a {
+    font-size: 1.2em;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr; /* เปลี่ยนเป็น 2 คอลัมน์ */
+  }
+
+  .tile {
+    padding: 15px; /* ลด padding */
+  }
+
+  iframe {
+    width: 100%; /* ให้ iframe กว้างเต็มหน้าจอ */
+    height: 250px; /* ปรับความสูง */
+  }
+}
+
+/* ขนาดหน้าจอขนาดใหญ่ (เดสก์ท็อป) */
+@media (min-width: 1200px) {
+  .logo h1 {
+    font-size: 3em; /* ขยายขนาดโลโก้ */
+  }
+
+  nav a {
+    font-size: 1.8em; /* ขยายขนาดเมนู */
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr; /* แบ่งเป็น 3 คอลัมน์ */
+  }
+
+  .tile {
+    padding: 25px; /* เพิ่ม padding */
+  }
+
+  iframe {
+    width: 400px; /* ขยาย iframe */
+    height: 320px;
+  }
+}
