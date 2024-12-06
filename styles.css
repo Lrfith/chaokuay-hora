@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", "Noto Sans Thai", Arial, sans-serif;
+  /* background-color: #f9f9f9; */
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://img5.pic.in.th/file/secure-sv1/BG020e93cedfaa2eb94f.png');
+  background-size: cover;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  /* กำหนดความกว้างสูงสุดของคอนเทนเนอร์ */
+  margin: 0 auto;
+  /* จัดให้อยู่กึ่งกลางหน้าจอ */
+  padding: 0 20px;
+  /* เพิ่ม Padding ด้านข้างสำหรับ Mobile */
+}
+
+/* Header Styles */
+header {
+  /* background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); */
+  padding: 10px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  /* จัดโลโก้และเมนูให้อยู่คนละฝั่ง */
+  align-items: center;
+  /* จัดให้องค์ประกอบอยู่กลางในแนวตั้ง */
+}
+
+/* Logo Section */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  width: 60px;
+  margin-right: 15px;
+}
+
+.logo h1 {
+  font-size: 2.5em;
+  color: #ff6600;
+ 
+}
+
+/* Navigation */
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 1.5em;
+}
+
+nav a.active,
+nav a:hover {
+  color: #ff6600;
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px 0;
+}
+
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: rgba(54, 54, 54, 0.644);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.486);
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  color: #ff6600;
+  text-transform: uppercase;
+}
+
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  /* แบ่งออกเป็น 3 คอลัมน์ */
+  gap: 20px;
+  /* ระยะห่างระหว่างไทล์ */
+  align-items: start;
+}
+
+
+/* Tile Style */
+.tile {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.450);
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.tile:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.644);
+  box-shadow: 0 6px 12px rgba(172, 172, 172, 0.788);
+}
+
+.tile p {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tile h3 {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 650;
+  margin-bottom: 10px;
+}
+
+.tile h4 {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 450;
+  margin-bottom: 10px;
+}
+
+.tile img {
+  width: 50%;
+}
+
+/* Info Section Styles */
+.info {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.sub-tile {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.sub-tile p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.temperature {
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.group {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  /* แบ่งกลุ่มเป็น 2 แถว */
+  gap: 10px;
+}
+
+/* Graph */
+.graph canvas {
+  width: auto;
+  height: 100%;
+}
+
+/* Name Menu for My Room */
+.menu-row {
+  display: flex;
+  justify-content: space-between;
+  /* จัดให้อยู่คนละฝั่ง */
+  align-items: center;
+  /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+  margin-bottom: 20px;
+  /* เพิ่มระยะห่างด้านล่าง */
+}
+
+/* Heading Style */
+.menu-row h2 {
+  font-size: 1.5rem;
+  color: #ff6600;
+  margin: 0;
+  /* ลบ Margin เริ่มต้นของ h2 */
+}
+
+/* Info Section */
+.menu-row .info {
+  text-align: right;
+  /* จัดข้อความใน Info ให้อยู่ชิดขวา */
+  font-size: 0.9rem;
+  color: #a0a0a0;
+}
+
+.menu-row .info p {
+  margin: 0;
+  /* ลบ Margin เริ่มต้นของ <p> */
+  line-height: 1.5;
+  /* เพิ่มความห่างระหว่างบรรทัด */
+}
+
+iframe {
+  border: 0;
+  width: 400px; /* กำหนดความกว้าง */
+  height: 320px; /* กำหนดความสูง */
+  border-radius: 10px; /* ทำขอบมน */
+  overflow: hidden; /* ซ่อนส่วนเกินของ iframe */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้ดูสวยงาม */
+}
+
+/* Footer Styles */
+footer {
+  padding: 15px 0;
+  font-size: 0.9rem;
+  color: #999;
+  text-align: center;
+}
