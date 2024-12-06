@@ -292,27 +292,3 @@ footer {
     height: 250px; /* ปรับความสูง */
   }
 }
-
-/* ขนาดหน้าจอขนาดใหญ่ (เดสก์ท็อป) */
-@media (min-width: 1200px) {
-  .logo h1 {
-    font-size: 3em; /* ขยายขนาดโลโก้ */
-  }
-
-  nav a {
-    font-size: 1.8em; /* ขยายขนาดเมนู */
-  }
-
-  .grid {
-    grid-template-columns: 1fr 1fr 1fr; /* แบ่งเป็น 3 คอลัมน์ */
-  }
-
-  .tile {
-    padding: 25px; /* เพิ่ม padding */
-  }
-
-  iframe {
-    width: 400px; /* ขยาย iframe */
-    height: 320px;
-  }
-}
