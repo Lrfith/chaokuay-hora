@@ -183,6 +183,7 @@ footer {
 }
 
 
+
 /* Responsive Styles */
 
 /* หน้าจอเล็ก (มือถือแนวตั้ง) */
@@ -197,12 +198,13 @@ footer {
     }
 
     header nav ul {
-        flex-direction: column; /* จัดเมนูเป็นแนวตั้ง */
+        /* flex-direction: column; จัดเมนูเป็นแนวตั้ง */
         align-items: center;
     }
 
     header nav ul li {
-        margin: 5px 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .profile {
@@ -281,7 +283,7 @@ footer {
 
     .profile-container {
         width: 100%;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 
     .about-center {
@@ -289,3 +291,36 @@ footer {
         margin: 0 auto;
     }
 }
+
+/* หน้าจอขนาดใหญ่ (เดสก์ท็อป) */
+@media (min-width: 1200px) {
+    header h1 {
+        font-size: 1.5em; /* ขยายขนาดตัวอักษร */
+    }
+
+    header nav ul li a {
+        font-size: 1.1em; /* ขยายขนาดเมนู */
+    }
+
+    .profile-index2 {
+        width: 80%;
+    }
+
+    .profile-index3 h1 {
+        font-size: 72px;
+    }
+
+    .profile-index3 h2 {
+        font-size: 52px;
+    }
+
+    .profile-container {
+        width: 70%;
+        margin: 0 auto; /* จัดกึ่งกลาง */
+    }
+
+    .about-center {
+        width: 80%;
+    }
+}
+
