@@ -306,14 +306,18 @@ footer {
     padding: 15px;
   }
 
+  .tile img {
+    width: 30%;;
+  }
+
   .tile p,
   .tile h3,
   .tile h4 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   nav a {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   .logo h1 {
