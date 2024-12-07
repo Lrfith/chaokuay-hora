@@ -240,55 +240,83 @@ footer {
 
 
 /* Responsive Styles */
-
-/* ขนาดหน้าจอเล็ก (มือถือแนวตั้ง) */
-@media (max-width: 480px) {
-  body {
-    font-size: 14px; /* ลดขนาดตัวอักษร */
-  }
-
-  .container {
-    padding: 0 10px; /* ลด padding ด้านข้าง */
-  }
-
-  .logo h1 {
-    font-size: 1.8em; /* ลดขนาดโลโก้ */
-  }
-
-  nav a {
-    font-size: 1em; /* ลดขนาดเมนู */
-  }
-
-  .grid {
-    grid-template-columns: 1fr; /* เปลี่ยนเป็น 1 คอลัมน์ */
-  }
-
-  iframe {
-    width: 100%; /* ให้ iframe กว้างเต็มหน้าจอ */
-    height: 200px; /* ลดความสูง */
-  }
-}
-
-/* ขนาดหน้าจอขนาดกลาง (แท็บเล็ต) */
+/* Responsive Styles */
 @media (max-width: 768px) {
-  .logo h1 {
-    font-size: 2.2em;
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
   }
 
   nav a {
+    margin: 5px 10px;
     font-size: 1.2em;
   }
 
   .grid {
-    grid-template-columns: 1fr 1fr; /* เปลี่ยนเป็น 2 คอลัมน์ */
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
-  .tile {
-    padding: 15px; /* ลด padding */
+  .menu-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu-row .info {
+    text-align: center;
+    margin-top: 10px;
   }
 
   iframe {
-    width: 100%; /* ให้ iframe กว้างเต็มหน้าจอ */
-    height: 250px; /* ปรับความสูง */
+    width: 100%;
+    /* ให้ iframe ขยายเต็มหน้าจอ */
+    height: auto;
+    /* ปรับความสูงอัตโนมัติตามเนื้อหา */
+  }
+
+  .tile img {
+    width: 80%;
+    /* ลดขนาดรูปภาพใน tile */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+    /* ลดขนาดฟอนต์โดยรวม */
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .tile {
+    padding: 15px;
+  }
+
+  .tile p,
+  .tile h3,
+  .tile h4 {
+    font-size: 1rem;
+  }
+
+  nav a {
+    font-size: 1em;
+  }
+
+  .logo h1 {
+    font-size: 2em;
   }
 }
